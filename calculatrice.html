@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Tallia-Anne Wambiekele Kiyeko">
+    <title>Calculatrice</title>
+        <style>
+        body {
+             background-image: linear-gradient(to right, #9b2d85 , #78117b  0%, #7c1240  100%);
+}
+
+        .wrap {
+            width: 100%;
+           
+
+        }
+        
+            form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+             border-radius: 7px;
+            border: none;
+            padding: 40px;
+            margin-top: 53px;
+            }
+            .content-form {
+            margin: auto;
+             width: 34%;
+            border-radius: 12px;
+            }
+            .content-form h1  {
+           
+            color: white;
+            font-weight: 100;
+}
+            .content-form p  {
+            padding-bottom: 12px;
+            color: white;
+}
+            .form-text {
+            padding-bottom: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            }
+
+            input[type="number" i] {
+            padding: 11px 4px;
+            border-bottom: 2px solid white;
+            border-top: none;
+            border-left: none;
+            border-right:none ;
+            /* border: none; */
+            width: 310px;
+            background: none;
+            color: white;
+          }
+        input[type="number" i]::placeholder {
+            
+            color: #ffffff74;
+          }
+             input[type="number" i]:focus {
+                border: none;
+          }
+            select {
+            border-bottom: 2px solid white;
+            border-top: none;
+            border-left: none;
+            border-right:none ;
+            font-size: 20px;
+            border-radius: 8px;
+        }
+           
+            input[type=submit ] {
+            padding: 12px 62px;
+            background-color: #ffffff32;
+            border-radius: 7px;
+            border: none;
+            box-shadow: 1px 1px 1px #4a033759;;
+            color: white;
+        }
+        
+       
+        .button {
+            display: flex;
+    align-items: center;
+    justify-content: center;
+}
+       .fonddescription {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #3ad566;
+        color: white;
+        font-weight: 800;
+        height: 50px;
+        box-shadow: #3ad56633;
+}
+     </style>
+
+</head>
+<body>
+    <div class="wrap">
+        <div class="content-form">
+        <form action=""  method="post" id="form" >
+        
+            <h1>Calculatrice</h1>      
+            <p>Veillez inserer des chriffres pour faire des calculs:</p>
+
+        <div class="wrap-form" >
+        <!-- //value permet recuperer les informations -->
+        <div class="form-text" >
+        
+        <input type="number" id="nb1" placeholder="Veillez entrer votre numéro"  >
+          
+            </div> 
+
+
+        <div class="form-text" >
+            <select name="calculs" id="calculId">
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            
+            </select>
+        </div>
+     
+
+        <div class="form-text" >
+
+             <input type="number" id="nb2" placeholder="Veillez entrer votre numéro"    > 
+
+            </div>
+        
+
+        <div class="button" >
+       
+        <input type="submit" id="submit" value="Calculer" > 
+        </div>
+        </div>
+        </form>
+        <br>
+
+         <div id="content">
+
+        </div>
+</div>
+
+      
+
+</div>
+<script src="calculatrice.js"></script>
+
+
+
+</body>
+
+
+</html>
+
